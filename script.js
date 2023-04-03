@@ -74,7 +74,7 @@ function total () {
 
   let link = 'https://wa.me/?link=';
   let textmessage =
-  `Olá gostaria de fazer o pedido:-Prato: ${type1}\n -Bebida: ${type2}\n -Sobremesa: ${type3}\n -Total:R$ ${result}`
+  `Olá gostaria de fazer o pedido: + "\n" + -Prato: ${type1} + "\n" + -Bebida: ${type2}+ "\n" + -Sobremesa: ${type3} + "\n" + -Total:R$ ${result}`
 
   let encoded = encodeURIComponent(textmessage)
   window.open(link + textmessage, "_blank")

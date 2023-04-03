@@ -103,7 +103,7 @@ span {
   font-weight: 700;
 }
 
-.food,
+.food1,
 .food2,
 .food3,
 .drink,
@@ -181,7 +181,7 @@ img {
   border-radius: 9px;
 }
 
-.checked .checked,
+.checked1 .checked,
 .checked2 .checked,
 .checked3 .checked {
   display: flex;
