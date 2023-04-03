@@ -37,7 +37,7 @@
               DE CAMARÃO! <br />
               Especialidade da casa.</span
             >
-            <h4 data-test="item-price">  R$ <a class="food-prices">14,90</a></h4>
+            <h4 data-test="item-price">R$ <a class="food-prices">14,90</a></h4>
             <div class="check">
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
@@ -66,7 +66,7 @@
 
         <h3>Agora, sua bebida</h3>
 
-        <div  class="drink-options">
+        <div class="drink-options">
           <div data-test="drink" class="drink" onclick="checkDrinks('.drink')">
             <img src="img/coca.jpeg" />
             <p data-test="item-name"><a class="drink-type">Coca-cola</a></p>
@@ -80,9 +80,15 @@
             </div>
           </div>
 
-          <div data-test="drink" class="drink2" onclick="checkDrinks('.drink2')">
+          <div
+            data-test="drink"
+            class="drink2"
+            onclick="checkDrinks('.drink2')"
+          >
             <img src="img/guarana.jpeg" />
-            <p data-test="item-name"><a class="drink-type">Guaraná Antarctica</a></p>
+            <p data-test="item-name">
+              <a class="drink-type">Guaraná Antarctica</a>
+            </p>
             <span>
               O melhor de todos!<br />
               350ml.</span
@@ -93,9 +99,15 @@
             </div>
           </div>
 
-          <div data-test="drink" class="drink3" onclick="checkDrinks('.drink3')">
+          <div
+            data-test="drink"
+            class="drink3"
+            onclick="checkDrinks('.drink3')"
+          >
             <img src="img/suco.jpeg" />
-            <p data-test="item-name"><a class="drink-type">Suco de laranja</a></p>
+            <p data-test="item-name">
+              <a class="drink-type">Suco de laranja</a>
+            </p>
             <span>
               Seja natural. <br />
               350ml.</span
@@ -109,34 +121,56 @@
 
         <h3>Por fim, sua sobremesa</h3>
         <div class="dessert-options">
-          <div data-test="dessert" class="dessert" onclick="checkDesserts('.dessert')">
+          <div
+            data-test="dessert"
+            class="dessert"
+            onclick="checkDesserts('.dessert')"
+          >
             <img src="img/palha-italiana.jpeg" />
-            <p data-test="item-name"><a class="dessert-type">Palha Italiana</a></p>
+            <p data-test="item-name">
+              <a class="dessert-type">Palha Italiana</a>
+            </p>
             <span>Chocolate ao leite<br />200g</span>
-            <h4 data-test="item-price">R$ <a class="dessert-prices">5,50</a></h4>
+            <h4 data-test="item-price">
+              R$ <a class="dessert-prices">5,50</a>
+            </h4>
             <div class="check">
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
           </div>
 
-          <div data-test="dessert" class="dessert2" onclick="checkDesserts('.dessert2')">
+          <div
+            data-test="dessert"
+            class="dessert2"
+            onclick="checkDesserts('.dessert2')"
+          >
             <img src="img/bolo-de-pote.jpeg" />
-            <p data-test="item-name"><a class="dessert-type">Bolo de pote</a></p>
+            <p data-test="item-name">
+              <a class="dessert-type">Bolo de pote</a>
+            </p>
             <span>
               Ninho com nutella <br />
               300g</span
             >
-            <h4 data-test="item-price">R$ <a class="dessert-prices">10,90</a></h4>
+            <h4 data-test="item-price">
+              R$ <a class="dessert-prices">10,90</a>
+            </h4>
             <div class="check">
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
           </div>
 
-          <div data-test="dessert" class="dessert3" onclick="checkDesserts('.dessert3')">
+          <div
+            data-test="dessert"
+            class="dessert3"
+            onclick="checkDesserts('.dessert3')"
+          >
             <img src="img/sorvete.jpeg" />
             <p data-test="item-name"><a class="dessert-type">Sorvete</a></p>
             <span> Creme <br />300ml</span>
-            <h4 data-test="item-price">R$ <a class="dessert-prices">7,00</a></h4>
+            <h4 data-test="item-price">
+              R$ <a class="dessert-prices">7,00</a>
+            </h4>
             <div class="check">
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
@@ -146,7 +180,7 @@
     </div>
 
     <div class="bottom-bar">
-      <div data-test="order-btn" class="order-button" onclick="total()">
+      <div data-test="order-btn" class="order-button" onclick="order()">
         <h5>
           Selecione os 3 itens <br />
           para fechar o pedido
