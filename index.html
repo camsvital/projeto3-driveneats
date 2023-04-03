@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-bar">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+      </div>
+
+      <h3>Primeiro, seu prato</h3>
+      <div class="food-drink-dessert">
+        <div class="food-options">
+          <div class="food" onclick="checkFoods('.food1')">
+            <img src="img/yakisoba.jpeg" />
+            <p><a class="food-type">Yakisoba</a></p>
+            <span>
+              DE CAMARÃO! <br />
+              Especialidade da casa.</span
+            >
+            <h4>R$ <a class="food-prices">14,90</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="food2" onclick="checkFoods('.food2')">
+            <img src="img/comidaderico.jpg" />
+            <p><a class="food-type">Comida de rico</a></p>
+            <span>POUQUÍSSIMA comida num prato empiriquitado</span>
+            <h4>R$ <a class="food-prices">28.55</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="food3" onclick="checkFoods('.food3')">
+            <img src="img/vai-quem-quer.jpeg" />
+            <p><a class="food-type">Vai quem quer</a></p>
+            <span>GIGANTE. Coma em 30 minutos e ganhe outro grátis</span>
+            <h4>R$ <a class="food-prices">14,90</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <h3>Agora, sua bebida</h3>
+
+        <div class="drink-options">
+          <div class="drink" onclick="checkDrinks('.drink')">
+            <img src="img/coca.jpeg" />
+            <p><a class="drink-type">Coca-cola</a></p>
+            <span>
+              Vem, viciado.<br />
+              350ml.
+            </span>
+            <h4>R$ <a class="drink-prices">8,00</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="drink2" onclick="checkDrinks('.drink2')">
+            <img src="img/guarana.jpeg" />
+            <p><a class="drink-type">Guaraná Antarctica</a></p>
+            <span>
+              O melhor de todos!<br />
+              350ml.</span
+            >
+            <h4>R$ <a class="drink-prices">8,90</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="drink3" onclick="checkDrinks('.drink3')">
+            <img src="img/suco.jpeg" />
+            <p><a class="drink-type">Suco de laranja</a></p>
+            <span>
+              Seja natural. <br />
+              350ml.</span
+            >
+            <h4>R$ <a class="drink-prices">9,00</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <h3>Por fim, sua sobremesa</h3>
+        <div class="dessert-options">
+          <div class="dessert" onclick="checkDesserts('.dessert')">
+            <img src="img/palha-italiana.jpeg" />
+            <p><a class="dessert-type">Palha Italiana</a></p>
+            <span>Chocolate ao leite<br />200g</span>
+            <h4>R$ <a class="dessert-prices">5,50</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="dessert2" onclick="checkDesserts('.dessert2')">
+            <img src="img/bolo-de-pote.jpeg" />
+            <p><a class="dessert-type">Bolo de pote</a></p>
+            <span>
+              Ninho com nutella <br />
+              300g</span
+            >
+            <h4>R$ <a class="dessert-prices">10,90</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="dessert3" onclick="checkDesserts('.dessert3')">
+            <img src="img/sorvete.jpeg" />
+            <p><a class="dessert-type">Sorvete</a></p>
+            <span> Creme <br />300ml</span>
+            <h4>R$ <a class="dessert-prices">7,00</a></h4>
+            <div class="check">
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="order-button" onclick="total()">
+        <h5>
+          Selecione os 3 itens <br />
+          para fechar o pedido
+        </h5>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
